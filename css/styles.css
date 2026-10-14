@@ -31,15 +31,15 @@ header{
     justify-content: space-between;
     align-items: center;
 }
--menu__img-logo{
+.menu__img-logo{
     height: 60px;
 }
 .menu__btn-menu{
     display: none;
 }
-.menu__enlaces{
+.menu__enlaces a{
     font-family: Poppins ;
-    padding: 7em;
+    padding: 2em;
     text-align: center;
     font-size: 1em;
     text-decoration: none;
@@ -51,10 +51,10 @@ header{
 } 
 
 @media screen and (max-width: 1023px) {
-    header .menu{
+    .menu{
         flex-direction: column;
     }
-    header .menu__img-logo{
+    .menu__logo{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
