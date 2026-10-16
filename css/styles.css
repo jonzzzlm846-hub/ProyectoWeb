@@ -103,11 +103,17 @@ header{
 }
 .container{
     width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
     margin: auto;
     z-index: 20;
     position: absolute;
 }
 
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
 .centrado{
     display: block;
     margin: auto;
@@ -138,4 +144,27 @@ header{
     font-family: 'Poppins';
 }
 
+.mainbanner__boton{
+}
+
+@media screen and (max-width: 860px) {
+    .mainbanner{
+        padding: 6em 4em;
+    }
+    .mainbanner__boton{
+        display: block;
+        margin-bottom: 1em;
+    }
+    .mainbanner__data{
+        text-align: center;
+        margin: auto;
+    }
+    .mainbanner__titulo{
+        font-size: 2em;
+    }
+    .mainbanner__parrafo{
+        font-size: 1em;
+    }
+}
+   
 /* FIN DE BANNER */
