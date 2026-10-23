@@ -4,6 +4,13 @@
     --accent-red: #d9534f;
     --border-card: #e5e5e5;
     --text-color: #1d3557;
+     --colorPrimario: #EC111A;
+  --colorSecundario: #082BA5;
+  --colorTerciario: #007BDF;
+  --colorTitulos: #282D31;
+  --colorParrafos: #53575A;
+  --colorSombras: #282D31; 
+  --colorBordes: #DFE0E0;
 }
 
 * {
@@ -172,3 +179,29 @@ body {
         grid-template-columns: 1fr;
     }
 }
+/* INICIO DE FOOTER */
+footer{
+    background-color: var(--colorSombras);
+    color: #fff;
+    padding: 3em 0;
+}
+ 
+.iconos-pie{
+    font-size: 3em;
+}
+.iconos-pie:hover{
+    color: var(--colorPrimario);
+}
+
+.pie, .info{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1em;
+}
+.derechos{
+    background-color: var(--colorParrafos);
+    color: #fff;
+    font-family: 'Poppins';
+    padding: .2em 0;
+}
+/*FIN DE FOOTER*/
