@@ -20,6 +20,7 @@ header{
     background-color: #FFF;
     position: fixed;
     top: 0;
+    height: 60px;
     width: 100%;
     z-index: 1000;
     box-shadow: 0 0 3px var(--colorSombras);
@@ -77,10 +78,11 @@ header{
 /* INICIO DE BANNER */
 .mainbanner{
     position: relative;
-    padding: 18em 14em;
+    padding: 16em 14em;
     /* background-color:var(--colorSecundario); */
     background: linear-gradient(to right, red, blue);
     top: 61px;
+    margin-bottom: 70px;
 }
 .mainbanner::after{
     content: "";
@@ -92,6 +94,7 @@ header{
     background-color:var(--colorSecundario);
     mix-blend-mode: color;
     opacity: .2;
+    
 }
 .mainbanner__img{
     position: absolute;
@@ -101,6 +104,7 @@ header{
     height: 100%;
     object-fit: cover;
     opacity: .2;
+    
 }
 .container{
     width: 100%;
@@ -108,27 +112,28 @@ header{
     padding-left: 15px;
     margin: auto;
     z-index: 20;
-    position: absolute;
+    /* position: absolute; */
 }
 
 .row{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
 }
-.centrado{
-    display: block;
-    margin: auto;
-}
+
 .mainbanner__data{
     text-align: center;
+    z-index: 21;
 }
+
+
 
 .mainbanner__titulo{
     color: #FFF;
     font-family: 'Poppins';
     font-weight: 700;
-    font-size: 2.5em;
-
+    font-size: 3.5em;
+    margin-bottom: 20px;
 }
 .mainbanner__parrafo{
     color: #FFF;
@@ -139,6 +144,8 @@ header{
 .mainbanner__boton{
     background-color: var(--colorPrimario);
     color: #FFF;
+    display: inline-block;
+    margin: 15px;
     padding: 1em 1.2em;
     border-radius: .8em;
     text-decoration: none;
@@ -182,28 +189,36 @@ header{
     border-radius: 1em;
     border: .5px solid var(--colorBordes);
     box-shadow: 0 2px 2px var(var(--colorSombras))
+    
 }
 
 .card__img img{
     max-width: 100%;
+    width: 100%;
+    min-height: 150px;
+    height: 150px;
     border-radius: 1em 1em 0 0;
+    
 }
-
+.centrar{
+    text-align: center;
+    padding: 10px 5px 10px 5px;
+}
 .card__title{
     font-family: 'Poppins';
+    height: 20px;
     font-weight: 700;
     font-size: 1em;
     text-align: center;
     color: var(--colorTitulos);
     text-transform: uppercase;
 }
-
 .card__info{
     background-color: var(--colorPrimario);
     color: #FFF;
     font-size: 1em;
     padding: 1em;
-    margin-top: 4em;
+    margin-top: 1.5em;
     display: block;
     border-radius: 1em;
     text-align: center;
