@@ -1,0 +1,510 @@
+@import url('https://googleapis.com');
+
+
+
+/* Declaración de variables de color idénticas al diseño */
+
+:root {
+
+  --colorPrimario: #ef1d26; /* El rojo vibrante del diseño */
+
+  --colorSecundario: #c9141b; /* Rojo oscuro para el hover */
+
+}
+
+
+
+/* Reseteeo base y fuentes */
+
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+body {
+
+  /* min-height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center; */
+
+  padding: 20px;
+  
+
+  background-color: #e9ecef;
+
+}
+
+
+
+/* Contenedor Principal de la Tarjeta */
+
+.contact-container {
+
+  display: flex;
+
+  width: 100%;
+
+  max-width: 900px;
+
+  background-color: #fafafa;
+
+  border-radius: 15px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+  margin:auto;
+
+  position: relative;
+
+}
+
+
+
+/* Columna Izquierda: Información */
+
+.contact-info {
+
+  width: 45%;
+
+  padding: 50px 40px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background-color: #fbfbfb;
+
+}
+
+
+
+.info-title {
+
+  color: var(--colorPrimario);
+
+  font-size: 22px;
+
+  margin-bottom: 40px;
+
+  font-weight: 700;
+
+}
+
+
+
+.info-list {
+
+  list-style: none;
+
+  margin-bottom: 50px;
+
+}
+
+
+
+.info-list li {
+
+  display: flex;
+
+  align-items: center;
+
+  margin-bottom: 25px;
+
+  color: #a0a0a0;
+
+  font-size: 15px;
+
+}
+
+
+
+.info-list i {
+
+  color: var(--colorPrimario);
+
+  font-size: 24px;
+
+  margin-right: 20px;
+
+  width: 25px;
+
+  text-align: center;
+
+}
+
+
+
+.social-section p {
+
+  color: #888;
+
+  margin-bottom: 15px;
+
+  font-size: 14px;
+
+}
+
+
+
+.social-icons {
+
+  display: flex;
+
+  gap: 10px;
+
+}
+
+
+
+.social-icons a {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  width: 35px;
+
+  height: 35px;
+
+  background-color: var(--colorPrimario);
+
+  color: #fff;
+
+  text-decoration: none;
+
+  border-radius: 8px;
+
+  transition: background-color 0.3s ease;
+
+}
+
+
+
+.social-icons a:hover {
+
+  background-color: var(--colorSecundario);
+
+}
+
+
+
+/* Círculo decorativo inferior izquierdo */
+
+.circle-decoration {
+
+  position: absolute;
+
+  bottom: -40px;
+
+  left: 40%;
+
+  width: 120px;
+
+  height: 120px;
+
+  border: 15px solid #d4f1eb;
+
+  border-radius: 50%;
+
+}
+
+
+
+/* Columna Derecha: Formulario */
+
+.contact-form {
+
+  width: 55%;
+
+  padding: 50px 40px;
+
+  background-color: var(--colorPrimario);
+
+  position: relative;
+
+  overflow: hidden;
+
+  color: #fff;
+
+}
+
+
+
+/* Decoraciones circulares tenues de fondo */
+
+.contact-form::before,
+
+.contact-form::after {
+
+  content: '';
+
+  position: absolute;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.05);
+
+}
+
+
+
+.contact-form::before {
+
+  width: 200px;
+
+  height: 200px;
+
+  top: -50px;
+
+  right: -50px;
+
+}
+
+
+
+.contact-form::after {
+
+  width: 100px;
+
+  height: 100px;
+
+  bottom: 20px;
+
+  left: -20px;
+
+}
+
+
+
+.form-title {
+
+  font-size: 22px;
+
+  margin-bottom: 30px;
+
+  position: relative;
+
+  z-index: 1;
+
+  font-weight: 600;
+
+}
+
+
+
+form {
+
+  position: relative;
+
+  z-index: 1;
+
+  display: flex;
+
+  flex-direction: column;
+
+}
+
+
+
+/* Estilo de los campos usando Fieldset */
+
+.input-group {
+
+  border: 1px solid rgba(255, 255, 255, 0.6);
+
+  border-radius: 25px;
+
+  padding: 0 20px 5px 20px;
+
+  margin-bottom: 20px;
+
+}
+
+
+
+.input-group legend {
+
+  font-size: 13px;
+
+  padding: 0 10px;
+
+  margin-left: 10px;
+
+  color: rgba(255, 255, 255, 0.9);
+
+  font-family: 'Poppins', sans-serif;
+
+  float: none;
+
+  width: auto;
+
+}
+
+
+
+.input-group input,
+
+.input-group textarea {
+
+  width: 100%;
+
+  border: none;
+
+  background: transparent;
+
+  outline: none;
+
+  color: #fff;
+
+  font-size: 15px;
+
+  font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+/* Ajuste para el área del mensaje */
+
+.textarea-group {
+
+  border-radius: 20px;
+
+  padding-bottom: 10px;
+
+}
+
+
+
+.textarea-group textarea {
+
+  resize: none;
+
+  height: 90px;
+
+}
+
+
+
+/* Botón Enviar Estilo Ovalado Blanco */
+
+.btn-send {
+
+  background-color: #fff;
+
+  color: var(--colorPrimario);
+
+  border: none;
+
+  border-radius: 25px;
+
+  padding: 10px 40px;
+
+  font-size: 15px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  align-self: flex-start;
+
+  margin-top: 5px;
+
+  transition: all 0.3s ease;
+
+  font-family: 'Poppins', sans-serif;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.btn-send:hover {
+
+  background-color: #f1f1f1;
+
+  transform: translateY(-1px);
+
+}
+
+
+
+/* Diseño Responsivo */
+
+@media (max-width: 768px) {
+
+  .contact-container {
+
+    flex-direction: column;
+
+  }
+
+
+
+  .contact-info,
+
+  .contact-form {
+
+    width: 100%;
+
+  }
+
+
+
+  .circle-decoration {
+
+    display: none;
+
+  }
+
+}
+/* Contenedor general de los iconos */
+.iconos-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Estilo base para los iconos (similar al que ya usas en la imagen) */
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background-color: #ff2d46; /* Color rojo de tu diseño */
+    color: #ffffff;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #e0243b;
+    transform: translateY(-2px);
+}
+
+/* (Opcional) Si prefieres que el icono de WhatsApp mantenga su color verde característico */
+.whatsapp-icon {
+    background-color: #25d366;
+}
+
+.whatsapp-icon:hover {
+    background-color: #1ebe5d;
+}
